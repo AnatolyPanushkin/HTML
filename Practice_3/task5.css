@@ -1,0 +1,23 @@
+
+img{
+    max-width: 200px;
+    max-height: 300px;
+    border: 0.4rem solid black;
+    padding: 5px;
+    margin: 5px;
+}
+img:hover{
+    max-width: 200px;
+    max-height: 300px;
+    border: 0.4rem solid rgb(175, 118, 118);
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(175, 118, 118);
+}
+div{
+    max-width: 800px;
+    margin: auto;
+}
+body{
+    background-color: antiquewhite;
+}
