@@ -1,0 +1,16 @@
+
+section{
+    display: flex;
+    justify-content:space-between;
+    max-width: 70vw;
+    margin: auto;
+}
+p{
+    font: 16px/1.5 Helvetica, sans-serif;
+}
+h2{
+    font: 2em/1.2 Georgia, serif;
+}
+div{
+    max-width: 15vw;
+}

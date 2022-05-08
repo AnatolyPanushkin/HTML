@@ -5,6 +5,7 @@ img{
     border: 0.4rem solid black;
     padding: 5px;
     margin: 5px;
+    vertical-align: middle
 }
 img:hover{
     max-width: 200px;
@@ -20,4 +21,7 @@ div{
 }
 body{
     background-color: antiquewhite;
+}
+li{
+    display: inline-block;
 }
