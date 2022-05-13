@@ -1,0 +1,61 @@
+@media screen {
+    .LoggingPanel{
+        position: absolute;
+        z-index: 1;
+    
+        display: flex;
+        flex-wrap: wrap;
+    
+        background-color: white;
+    
+        height: 150px;
+        width: 350px;
+    
+        padding: 10px;
+    
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    input{
+        width: 250px;
+        height: 20px;
+        margin-right: 10px;
+        
+    }
+    .Login{
+        position: relative;
+        bottom: -10px;
+        z-index: 2;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 30px;
+    }
+    div{
+        border:1px solid black;
+        border-radius: 0.5 rem;
+    }
+    button{
+        display: flex;
+        width: 50px;
+        height: 30px;
+        background-color: black;
+        color: white;
+        border: 10px solid transparent;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+    p{
+        margin-left: 10px;
+    }
+}
+
+@media {}
+
+
+
