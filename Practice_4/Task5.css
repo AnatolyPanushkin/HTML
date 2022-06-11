@@ -1,4 +1,4 @@
-body{
+/* body{
     background-color: rgb(238, 238, 238);
     display: flex;
     flex-wrap: wrap;
@@ -73,4 +73,153 @@ img{
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 8;
+} */
+
+/* .grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 200px);
+    grid-auto-rows: 200px;
+ }
+ 
+ .photo {
+    grid-row-end: span 2;
+ }
+ .project {
+    grid-row-end: span 3;
+ }
+ .blog {
+    grid-row-end: span 1;
+ }
+ 
+  
+ body {
+   margin: 10px;
+     color: #374046;
+     background-color: #374046;
+     font-family: 'Open Sans Condensed', sans-serif;
+     font-size: 1.15em;
+     text-rendering: optimizeLegibility;
+     -webkit-font-smoothing: antialiased;
+ }
+ 
+ .item {
+   background-color: #ffffff;
+ }
+ 
+ .photothumb{
+   width: 100%;
+ }
+ 
+ .title {
+   padding: 20px;
+  }
+ 
+ .title h3{
+   font-size: 1.2em;
+   color: #ffffff;
+   text-transform: uppercase;
+ }
+ 
+ .project .title{
+   background-color: #607D8B;
+ }
+ 
+ .blog .title{
+   background-color: #ff9800;
+ }
+ 
+ .photo .title{
+   background-color: #f44336;
+ }
+ 
+ .desc{
+   padding: 10px 10px 5px 10px;
+ }
+ 
+ .desc img{
+   width: 50%;
+   margin: 0 10px 10px 0;
+   float: left;
+ }
+ 
+ .desc p{
+   margin-bottom: 10px;
+ } */
+
+
+body{
+  background-color: rgb(238, 238, 238);
+}
+
+.hr{
+height: 1px;
+border: none;
+  background-color: rgb(238, 238, 238);
+border-top: 1px solid  rgb(238, 238, 238);
+border-bottom: 1px solid  rgb(238, 238, 238);
+  align-self: flex-end;
+  
+}
+.masonry{
+  padding: 100px;
+  justify-content: center;
+  padding-top: 1em;
+  column-count: 3;
+  column-gap: 1em;
+  display: block;
+  overflow: hidden;
+  padding-bottom: 1em;
+}
+.flex{
+  padding: 200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-self: flex-start;
+}
+.flex:after{
+  content: '';
+  width: 30%;
+  margin-right: 1em;
+}
+.flex div {
+  max-width: 30%;
+}
+
+.card{ 
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 8px 3px rgba(0, 0, 0, .2);
+  border-radius: 0.5rem;
+  display: inline-block;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-bottom: 10px;
+  margin-right: 1em;
+  overflow: hidden;
+}
+img{
+  width: 100%;
+}
+
+p{
+  font: 16px/1.5 Helvetica, sans-serif;
+  padding: 0 10px;
+}
+
+.foot{
+  padding: 10px ;
+  font: 16px/1.5 Helvetica, sans-serif;
+  align-items: flex-end;
+}
+h2{
+  font-size: 32px;
+  font-family: Georgia, serif;
+}
+h3{
+  font: 17px/1.5 Helvetica, sans-serif;
+  font-weight: 400;
+  padding: 5px 20px 0;
+  margin-bottom: -15px;
 }

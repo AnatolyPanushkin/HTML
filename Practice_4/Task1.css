@@ -54,7 +54,9 @@ body{
     height: 300px;
     float: right;
 }
-.main-footer{
+.main-footer
+{
+    margin-top: 10px;
     position: relative;
     height: 50px;
     clear: both;

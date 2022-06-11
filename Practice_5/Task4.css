@@ -1,101 +1,58 @@
-@media screen and (width : 1920px) {
-    section{
-        margin: 80px;
+body {
+    padding: 100px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  table {
+    table-layout: fixed;
+    text-align: left;
+    width: 100%;
+  }
+  
+  th {
+    background: rgb(0, 0, 0);
+    color: #fff;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background: rgb(230, 230, 230);
+  }
+  
+  td,th {
+    padding: 5px;
+  }
+  
+  table,td,th {
+    border: rgb(245, 245, 245) 1px solid;
+    border-collapse: collapse;
+  }
+  
+  tbody tr {
+    transition: 0.1s ease-in-out;
+  }
+  
+  @media screen and (max-width: 700px) {
+    body {
+      font-size: 14px;
+      padding: 25px;
     }
-    table{
-       font: 16px/1.5 Helvetica, sans-serif;
-       font-weight: bold;
-       border-collapse: collapse;
-       border: 1px solid rgb(220, 220, 220);
+  }
+  
+  @media screen and (max-width: 500px) {
+    thead {
+      display: none;
     }
-    td{
-        border-collapse: collapse;
-        width: 300px;
-        border: 1px solid rgb(220, 220, 220);
+  
+    tr {
+      display: flex;
+      flex-direction: column;
     }
-    table tbody tr:nth-child(odd){
-        background-color: rgb(240, 240, 240);
+  
+    td::before {
+      content: attr(label);
+      margin-right: 10px;
+      font-weight: 700;
     }
-    
-    table tbody tr:hover{
-        border: 1px solid rgb(0, 0, 0);
-        background-color:rgb(0, 0, 0);
-        color: rgb(255, 255,255);
-    }
-    table thead tr{
-        width: 300px;
-        text-align: left;
-        background-color: rgb(71, 67, 67);
-        color: white;
-    }
-}
-
-@media screen and (max-width : 1900px){
-    /* section{
-        margin: 80px;
-    }
-    table{
-        display: flex;
-    }
-    thead tr{
-        display: flex;
-        flex-direction: column;
-    }
-    tbody tr{
-        display: flex;
-        flex-direction: column;
-    }
-    tr{
-        
-        text-align: left;
-    } */
-    /* table {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      tbody {
-          display: flex;
-          flex-direction: row;
-      }
-      tr {
-          display: flex;
-          flex-direction: column;
-      } */
-      thead {
-        float:left
-    }
-    tbody {
-        float:right
-    }
-    thead th {
-        display: block;
-        border: 1px solid black;
-    }
-    tbody td {
-        display: block;
-        border: 1px solid black;
-    }
-    thead th:first-child {
-        display:none;
-    }
-    td:first-child {
-        position: absolute;
-        left: 0;
-        top: 0;
-        border: 1px solid black;
-        border-width: 1px 0 1px 1px;
-        padding-right: 5px;
-    }
-    td:first-child img {
-        display: block;
-    }
-    .views-table {
-        margin-left: 90px;
-        border: none;
-    }
-    .view-content {
-        display: inline-block;
-        position: relative;    
-    }
-}
+  }
